@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="fondo">
+            <h1>Registro para manejar mis actividades/tareas</h1>
+            <h2>Agregar nueva actividad o tarea:</h2>
+            <div id="form-box">
+                <form>
+                    <div>
+                        <span>Tarea o actividad:</span><input type="text" id="tarea" class="input" placeholder="Añade titulo de la tarea o actividad" required>
+                    </div>
+                    <div>
+                        <span>Descripción de la tarea o actividad:</span><input type="text" id="descripcion" class="input" placeholder="Añade descripción(opcional)" required>
+                    </div>
+                    <div>
+                        <span>Estado:</span> 
+                        <select id="estado" required>
+                            <option value="pendiente">Pendiente</option>
+                            <option value="completado">Completado</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>Origen:</span> 
+                        <select id="origen" required>
+                            <option value="facu">Universidad</option>
+                            <option value="trabajo">Trabajo</option>
+                            <option value="casa">Casa</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>Fecha:</span> <input type="date" class="input" id="fecha" required>
+                    </div>                      
+                </form>
+            </div>
+            <div id="button" class="button" type="submit" value="Enviar" onclick="onRegistrarTarea()">Registrar tarea/actividad</div>
+        </div>       
+    </body>
+    <script src="script.js"></script>
+</html>
